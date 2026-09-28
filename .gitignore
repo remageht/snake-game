@@ -8,6 +8,7 @@ pnpm-debug.log*
 # Rust & Tauri build outputs
 target/
 src-tauri/target/
+release-artifacts/
 
 # Tauri mobile build outputs
 src-tauri/gen/android/.gradle/

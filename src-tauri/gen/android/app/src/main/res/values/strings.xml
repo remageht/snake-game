@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">"Snake Game"</string>
+    <string name="main_activity_title">"Snake Game"</string>
+</resources>

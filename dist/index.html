@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Змейка — полноценный проект</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <h1>🐍 Змейка</h1>
+
+  <div class="panel">
+    <div>Счёт: <b id="score">0</b></div>
+    <div>Рекорд: <b id="best">0</b></div>
+    <label>Скорость:
+      <select id="speed">
+        <option value="160">Новичок</option>
+        <option value="110" selected>Обычная</option>
+        <option value="75">Профи</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="board-wrap">
+    <canvas id="game" width="400" height="400"></canvas>
+    <div id="overlay" class="overlay">
+      <div id="overlay-text">Нажми «Старт»</div>
+      <button id="btn-start">Старт</button>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button id="btn-pause">Пауза</button>
+    <button id="btn-restart">Заново</button>
+  </div>
+
+  <p class="hint">Стрелки / WASD — движение, Пробел — пауза. На телефоне — свайпы.</p>
+
+  <h2>🏆 Топ-5</h2>
+  <ol id="top"></ol>
+</div>
+<script src="js/game.js"></script>
+</body>
+</html>

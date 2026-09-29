@@ -8,7 +8,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 <p align="center">
-  <img src="preview.png" alt="Snake Game Neon Redesign" width="400">
+  <img src="gameplay.png" alt="Snake Game Gameplay" width="360">
+  &nbsp;&nbsp;
+  <img src="preview.png" alt="Snake Game Start Screen" width="360">
 </p>
 
 Классическая игра **«Змейка»**, реализованная на чистом **HTML5 Canvas** и портированная в нативное кроссплатформенное приложение для **Windows** и **Android** с помощью **Tauri v2** и **Rust**.
@@ -30,14 +32,15 @@
 
 ## 📦 Готовые дистрибутивы (Releases)
 
-Релизные сборки версии **v0.1.0** доступны в репозитории в каталоге [`release-artifacts/`](./release-artifacts/):
+Релизные сборки версии **v0.1.0** доступны в каталоге [`release-artifacts/`](./release-artifacts/):
 
 | Платформа | Формат | Описание | Файл |
 | :--- | :--- | :--- | :--- |
 | **Windows** | `.msi` | Официальный установщик Windows Installer | [`Snake Game_0.1.0_x64_en-US.msi`](./release-artifacts/Snake%20Game_0.1.0_x64_en-US.msi) |
 | **Windows** | `.exe` (Setup) | Мастер установки NSIS | [`Snake Game_0.1.0_x64-setup.exe`](./release-artifacts/Snake%20Game_0.1.0_x64-setup.exe) |
 | **Windows** | `.exe` (Portable) | Автономный портативный исполняемый файл | [`snake-game.exe`](./release-artifacts/snake-game.exe) |
-| **Android** | `.apk` | Установочный пакет для Android (aarch64 / ARMv8) | [`snake-game-release.apk`](./release-artifacts/snake-game-release.apk) |
+| **Android** | `.apk` (Signed) | **Подписанный APK для установки на телефон** | [`snake-game-signed.apk`](./release-artifacts/snake-game-signed.apk) |
+| **Android** | `.apk` (Release) | Релизный установочный пакет Android (ARM64) | [`snake-game-release.apk`](./release-artifacts/snake-game-release.apk) |
 
 ---
 
@@ -96,12 +99,17 @@ npm run tauri build
 Готовые инсталляторы будут созданы в папке:
 `src-tauri/target/release/bundle/` (`msi/` и `nsis/`).
 
-### 4. Сборка Android APK
+### 4. Сборка и подпись Android APK
 ```bash
 npm run tauri android build -- --apk
 ```
 Готовый установочный файл APK появится в папке:
 `src-tauri/gen/android/app/build/outputs/apk/universal/release/app-universal-release-unsigned.apk`.
+
+Для установки на устройство подпишите его с помощью `apksigner`:
+```bash
+apksigner sign --ks keystore.jks --ks-key-alias my-alias --out snake-game-signed.apk app-universal-release-unsigned.apk
+```
 
 ---
 

@@ -32,15 +32,16 @@
 
 ## 📦 Готовые дистрибутивы (Releases)
 
-Релизные сборки версии **v0.1.0** доступны в каталоге [`release-artifacts/`](./release-artifacts/):
+Свежие релизные сборки доступны на странице **[GitHub Releases v0.1.1 (Latest)](https://github.com/remageht/snake-game/releases/tag/v0.1.1)**:
 
-| Платформа | Формат | Описание | Файл |
+| Платформа | Формат | Описание | Скачать с GitHub Releases |
 | :--- | :--- | :--- | :--- |
-| **Windows** | `.msi` | Официальный установщик Windows Installer | [`Snake Game_0.1.0_x64_en-US.msi`](./release-artifacts/Snake%20Game_0.1.0_x64_en-US.msi) |
-| **Windows** | `.exe` (Setup) | Мастер установки NSIS | [`Snake Game_0.1.0_x64-setup.exe`](./release-artifacts/Snake%20Game_0.1.0_x64-setup.exe) |
-| **Windows** | `.exe` (Portable) | Автономный портативный исполняемый файл | [`snake-game.exe`](./release-artifacts/snake-game.exe) |
-| **Android** | `.apk` (Signed) | **Подписанный APK для установки на телефон** | [`snake-game-signed.apk`](./release-artifacts/snake-game-signed.apk) |
-| **Android** | `.apk` (Release) | Релизный установочный пакет Android (ARM64) | [`snake-game-release.apk`](./release-artifacts/snake-game-release.apk) |
+| **Windows** | `.exe` (Setup) | **Рекомендуется**. Мастер установки NSIS (ярлыки, меню «Пуск») | [⬇️ Snake Game Setup (v0.1.1)](https://github.com/remageht/snake-game/releases/download/v0.1.1/Snake.Game_0.1.0_x64-setup.exe) |
+| **Windows** | `.msi` | Официальный установщик Windows Installer | [⬇️ Snake Game MSI (v0.1.1)](https://github.com/remageht/snake-game/releases/download/v0.1.1/Snake.Game_0.1.0_x64_en-US.msi) |
+| **Windows** | `.exe` (Portable) | Автономный портативный исполняемый файл без установки | [⬇️ Snake Game Portable (v0.1.1)](https://github.com/remageht/snake-game/releases/download/v0.1.1/snake-game.exe) |
+| **Android** | `.apk` (Signed) | **Подписанный APK для установки на телефон (ARM64)** | [⬇️ Snake Game Android APK (v0.1.1)](https://github.com/remageht/snake-game/releases/download/v0.1.1/snake-game-signed.apk) |
+
+> Локальные копии всех бинарных файлов также сохранены в каталоге [`release-artifacts/`](./release-artifacts/).
 
 ---
 

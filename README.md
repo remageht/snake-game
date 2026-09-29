@@ -7,6 +7,10 @@
 [![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat&logo=android&logoColor=white)](#android-apk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
+<p align="center">
+  <img src="preview.png" alt="Snake Game Neon Redesign" width="400">
+</p>
+
 Классическая игра **«Змейка»**, реализованная на чистом **HTML5 Canvas** и портированная в нативное кроссплатформенное приложение для **Windows** и **Android** с помощью **Tauri v2** и **Rust**.
 
 ---
